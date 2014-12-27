@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html value="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Test Bootstrap</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="dashboard.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" href="dist/jstree/themes/proton/style.min.css" />
+		<script src="dist/jstree/jstree.min.js"></script>
+
+		<link href="dist/calendar/css/responsive-calendar.css" rel="stylesheet">
+		<script src="dist/calendar/js/responsive-calendar.js"></script>
+	</head>
+	<body>
+
+	    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	      <div class="container-fluid">
+	        <div class="navbar-header">
+	          <a class="navbar-brand" href="#">PALHA</a>
+	        </div>
+	        <div id="navbar" class="navbar-collapse collapse">
+	        	<ul class="nav navbar-nav navbar-right">
+		            <li class="dropdown">
+		              <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+		                Dropdown
+		                <span class="caret"></span>
+		              </a>
+		              <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+		                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Action</a></li>
+		                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Another action</a></li>
+		                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Something else here</a></li>
+		                <li role="presentation" class="divider"></li>
+		                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Separated link</a></li>
+		              </ul>
+		            </li>
+	            </ul>
+	        </div>
+	      </div>
+	    </nav>
+
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-sm-3 col-md-2 sidebar">
+					<ul class="nav nav-sidebar">
+						<li class="active"><a href="#">Accueil</a></li>
+						<li><a href="#">Configuration</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#myModal">Congés</a></li>
+					</ul>
+				</div>
+
+				<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+					<h1 class="page-header">Accueil</h1>
+
+					<div class="row placeholders">
+			            <div class="col-xs-6 col-sm-3 placeholder">
+			              	<img src="http://lorempixel.com/200/200/people/1" class="img-responsive" alt="Generic placeholder thumbnail">
+			              	<h4>Label</h4>
+			              	<span class="text-muted">Something else</span>
+			            </div>
+			            <div class="col-xs-6 col-sm-3 placeholder">
+			              	<img src="http://lorempixel.com/200/200/people/8" class="img-responsive" alt="Generic placeholder thumbnail">
+			              	<h4>Label</h4>
+			              	<span class="text-muted">Something else</span>
+			            </div>
+			            <div class="col-xs-6 col-sm-3 placeholder">
+			              	<img src="http://lorempixel.com/200/200/people/6" class="img-responsive" alt="Generic placeholder thumbnail">
+			              	<h4>Label</h4>
+			              	<span class="text-muted">Something else</span>
+			            </div>
+			            <div class="col-xs-6 col-sm-3 placeholder">
+			              	<img src="http://lorempixel.com/200/200/people/7" class="img-responsive" alt="Generic placeholder thumbnail">
+			              	<h4>Label</h4>
+			              	<span class="text-muted">Something else</span>
+			            </div>
+			         </div>
+
+
+			         <div class="row">
+				         <div class="col-xs-6 col-sm-3 placeholder">
+				         <h2 class="sub-header">JS Tree</h2>
+				         	<div id="container">
+							  	<ul>
+							    	<li>Root node
+							      		<ul>
+							       			<li id="child_node_1">Child node</li>
+							       			<li id="child_node_2">Child node</li>
+							       			<li id="child_node_3">Child node
+							       				<ul>
+							       					<li id="child_node_3_1">Sub Child node</li>
+							       					<li id="child_node_3_2">Sub Child node</li>
+							       				</ul>
+							       			</li>
+							      		</ul>
+							    	</li>
+							  	</ul>
+							</div>
+						</div>
+
+
+						<div class="col-xs-6 col-sm-6 placeholder">
+
+						    <div class="calendar">
+						      <!-- Responsive calendar - START -->
+						    	<div class="responsive-calendar">
+							        <div class="controls">
+							            <a class="pull-left" data-go="prev"><div class="btn btn-primary">Prev</div></a>
+							            <h4><span data-head-year></span> <span data-head-month></span></h4>
+							            <a class="pull-right" data-go="next"><div class="btn btn-primary">Next</div></a>
+							        </div><hr/>
+							        <div class="day-headers">
+							          <div class="day header">Lun</div>
+							          <div class="day header">Mar</div>
+							          <div class="day header">Mer</div>
+							          <div class="day header">Jeu</div>
+							          <div class="day header">Ven</div>
+							          <div class="day header">Sam</div>
+							          <div class="day header">Dim</div>
+							        </div>
+							        <div class="days" data-group="days">
+							          
+							     </div>
+							</div>
+							      <!-- Responsive calendar - END -->
+						 </div>
+
+					</div>
+
+
+						<div class="col-xs-6 col-sm-3">
+							<div class="panel panel-default">
+						  		<div class="panel-heading">
+						    		<h3 class="panel-title">Panel title</h3>
+						  		</div>
+
+						  		<div class="panel-body">
+						    		<div class="input-group">
+									  	<span class="input-group-addon">@</span>
+									  	<input type="text" class="form-control" placeholder="Username">
+									</div>
+									<br/>
+
+									<div class="input-group">
+									  <span class="input-group-addon">$</span>
+									  <input type="text" class="form-control">
+									  <span class="input-group-addon">.00</span>
+									</div>
+									<br/>
+									<div class="input-group">
+								      	<span class="input-group-addon">
+								       	 	<input type="checkbox">
+								      	</span>
+								      	<input type="text" class="form-control">
+								    </div>
+						  		</div>
+							</div>
+						</div>
+					</div>
+
+	<script>
+	$(function() {
+	  $('#container').jstree({
+	    'core': {
+	        'themes': {
+	            'name': 'proton',
+	            'responsive': true
+	        }
+	    }
+	  });
+
+	  $(".responsive-calendar").responsiveCalendar({
+          time: '2013-05',
+          events: {
+            "2013-04-30": {"number": 5, "url": "http://w3widgets.com/responsive-slider"},
+            "2013-04-26": {"number": 1, "url": "http://w3widgets.com"}, 
+            "2013-05-03":{"number": 1}, 
+            "2013-06-12": {}}
+        });
+	});
+	</script>
+
+			         <h2 class="sub-header">Section title</h2>
+			         <div class="table-responsive">
+			            <table class="table table-striped">
+			              	<thead>
+			                	<tr>
+				                  	<th>#</th>
+				                  	<th>Header</th>
+				                  	<th>Header</th>
+				                  	<th>Header</th>
+				                  	<th>Header</th>
+			                	</tr>
+			              	</thead>
+			              	<tbody>
+			                	<tr>
+				                  	<td>1,001</td>
+					                <td>Lorem</td>
+					                <td>ipsum</td>
+					                <td>dolor</td>
+					                <td>sit</td>
+				                </tr>
+				                <tr>
+				                	<td>1,002</td>
+				                  	<td>amet</td>
+				                  	<td>consectetur</td>
+				                  	<td>adipiscing</td>
+				                  	<td>elit</td>
+				                </tr>
+				                <tr>
+				                  	<td>1,003</td>
+				                  	<td>Integer</td>
+				                  	<td>nec</td>
+				                  	<td>odio</td>
+				                  	<td>Praesent</td>
+				                </tr>
+				                <tr>
+				                  	<td>1,003</td>
+				                  	<td>Integer</td>
+				                  	<td>nec</td>
+				                  	<td>odio</td>
+				                  	<td>Praesent</td>
+				                </tr>
+				              	<tr>
+				                  	<td>1,003</td>
+				                  	<td>Integer</td>
+				                  	<td>nec</td>
+				                  	<td>odio</td>
+				                  	<td>Praesent</td>
+				                </tr>  	
+			                	<tr>
+				                  	<td>1,001</td>
+					                <td>Lorem</td>
+					                <td>ipsum</td>
+					                <td>dolor</td>
+					                <td>sit</td>
+				                </tr>
+				                <tr>
+				                	<td>1,002</td>
+				                  	<td>amet</td>
+				                  	<td>consectetur</td>
+				                  	<td>adipiscing</td>
+				                  	<td>elit</td>
+				                </tr>
+				                <tr>
+				                  	<td>1,003</td>
+				                  	<td>Integer</td>
+				                  	<td>nec</td>
+				                  	<td>odio</td>
+				                  	<td>Praesent</td>
+				                </tr>
+				                <tr>
+				                  	<td>1,003</td>
+				                  	<td>Integer</td>
+				                  	<td>nec</td>
+				                  	<td>odio</td>
+				                  	<td>Praesent</td>
+				                </tr>
+				              	<tr>
+				                  	<td>1,003</td>
+				                  	<td>Integer</td>
+				                  	<td>nec</td>
+				                  	<td>odio</td>
+				                  	<td>Praesent</td>
+				                </tr>  		               
+			            	</tbody>
+			          	</table>
+			       </div>
+
+				</div>	
+
+			</div>
+
+
+		</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+	</body>
+</html>
